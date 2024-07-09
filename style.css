@@ -1,0 +1,214 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(pics/Desktop\ -\ 1\ \(3\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family:"Montserrat", sans-serif;    
+}
+.nav1 ul{
+    margin: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: -5%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;   
+    gap: 42px; 
+    
+}
+.nav1{
+    background-color: transparent;
+    overflow: hidden;
+    width: 100%;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 25px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease;
+    color: rgba(255, 255, 255, 0.95);
+}
+.nav1 .sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.877);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+
+}
+.sidebar a{
+    width: 100%;
+    cursor: pointer;
+    color: #0c020d;
+}
+.sid{
+    margin-top: 2%;
+}
+.menu-button{
+    display: none;
+    margin-right: 8px;
+
+}
+.menu-button svg {
+    fill: #fff; 
+}
+.nav1 li:first-child {
+    margin-right: auto; 
+    margin-left: 5%;
+}
+.white-text {
+    color: white;
+}
+
+.outline-text {
+    color: transparent;
+    -webkit-text-stroke: 1px white; /* Outline width and color */
+    font-weight: bold; /* Adjust as needed */
+    font-family:"Montserrat", sans-serif;
+}
+.cardsimg{
+    height: 400px;
+}
+
+.landingpage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    gap: 40px;
+    color: #fff;
+}
+.landingleft h1{
+    font-size: 2.9rem;
+}
+.landingleft p{
+    font-size: 1.15rem;
+}
+.landp{
+    display: flex;
+    align-items: center;
+    color: 	#0BDA51;
+    font-size: 0.3rem;
+}
+.money{
+    height: 25px;
+    margin-bottom: 6px;
+    margin-right: 2px;
+}
+.landingbtn{
+    padding: 10px 20px;
+    border-radius: 1.5rem;
+    font-size: 15px;
+    border: none;
+    color: #fff;
+    background-color: #318CE7;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.downloadimg{
+    height: 25px;
+    margin-bottom: -4px;
+
+}
+.ahrefs{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16.5px;
+}
+.hrefp{
+    color: #BF40BF;
+}
+.learn{
+    margin-top: 15%;
+    font-size: 1rem;
+}
+
+
+
+
+
+@media (max-width:768px){
+
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: flex;
+        margin-right: 2%;
+    }
+    .nav1{
+        overflow-x: hidden;
+    }
+    .landingpage{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .landingleft h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .landingleft p{
+        font-size: 0.8rem;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto; 
+        margin-bottom: 7%;
+    }
+    .landp{
+        display: none;
+    }
+    .landingbtn{
+        padding: 7px 12px;
+        border-radius: 1.5rem;
+        font-size: 12px;
+        border: none;
+        color: #fff;
+        background-color: #318CE7;
+        margin-right:0;
+        cursor: pointer;
+    }
+    .downloadimg{
+        height: 20px;
+        margin-bottom: -4px;
+    
+    }
+    .ahrefs{
+        text-decoration: none;
+        color: #fff;
+        font-size: 12px;
+    }
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin-bottom: 20px;
+    }
+    .cardsimg{
+        height: 230px;
+    }
+}

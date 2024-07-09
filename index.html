@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav1">
+        <ul class="sidebar">
+            <li onclick=closeSidebar() class="sid"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul>
+            <li class="hideOnMobile"></li>
+            <li class="hideOnMobile"><a href="#">Home</a></li>
+            <li class="hideOnMobile"><a href="#">Services</a></li>
+            <li class="hideOnMobile"><a href="#">About Us</a></li>
+            <li class="hideOnMobile"><a href="#">Contact</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <div class="landingpage">
+        <div class="landingleft">
+            <p class="landp"><img src="pics/money-bags.png" class="money">START SAVING YOUR MONEY</p>
+            <H1>Payments<br>
+            have never <br>
+        been easier</H1>
+        <p>Discover the easiest way to manage your personal finances.<br>
+        Save, analyse, invest, withdraw, send and receive money all<br>
+    over the world with no limits!</p>
+    <div class="buttons">
+        <button class="landingbtn">Get started</button>
+        <a href="#" class="ahrefs">Download <img src="pics/download.png" class="downloadimg"></a>
+    </div>
+    <p class="learn">Learn more about digital banking <a href="#" class="hrefp">Here</a></p>
+
+        </div>
+        <div class="landingright">
+            <img src="pics/Group 2.png" alt="cards" class="cardsimg">
+
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function closeSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    
+</body>
+</html>
